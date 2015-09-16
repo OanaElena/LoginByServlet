@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<title>Add new Java question</title>
+</head>
+<body>
+<div class="container">
+      <form class="form-register" action="AddJavaQuestionServlet" method="post">
+      <h2 class="form-register-heading">Add new question</h2>
+	        <label for="inputTitle" class="sr-only">Title question</label>
+	        <input type="text" id="inputTitle" name="titleName" class="form-control" placeholder="Question title" required autofocus>
+	        <label for="inputQuestion" class="sr-only">Question</label>
+            <textarea id="inputQuestion" name="questionName" class="form-control"  rows="4" cols="30" placeholder="Ask here..." required></textarea>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Add question</button>
+      </form>
+</div>
+</body>
+</html>

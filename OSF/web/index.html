@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/register.css">
+
+<title>Register page</title>
+</head>
+<body>
+<div class="container">
+<div id="rightSignIn">
+			Already have an account?
+			<button class="btn" onclick="window.location.href='login.html'">Sign in</button>
+</div>
+		
+	<form class="form-register" action="RegisterServlet" method="post">
+	        <h2 class="form-register-heading">Please register</h2>
+	        <label for="inputFirstName" class="sr-only">First name</label>
+	        <input type="text" id="inputFirstName" name="firstName" class="form-control" placeholder="First name" required autofocus>
+	        <label for="inputLastName" class="sr-only">Last name</label>
+	        <input type="text" id="inputLastName" name="lastName" class="form-control" placeholder="Last name" required>
+	        <label for="inputEmail" class="sr-only">Email address</label>
+	        <input type="email" id="inputEmail" name="emailName" class="form-control" placeholder="Email address" required>
+	        <label for="inputPassword" class="sr-only">Password</label>
+	        <input type="password" id="inputPassword" name="passwordName" class="form-control" pattern=".{6,}"  required title="6 characters minimum" placeholder="Password" required>
+	        <label for="inputcurrentJob" class="sr-only">Current job</label>
+	        <input type="text" id="inputCurrentJob" name="currentJobName" class="form-control" placeholder="Current job" required>
+	        <label for="inputJavaExperience">Java experience</label>
+	        <select id="inputJavaExperience" name="javaExperienceName">
+	        <option value=" < 6 months"> &lt; 6 months</option>
+	        <option value=" 6-12 months"> 6-12 months</option>
+	        <option value=" > 1 year"> &gt; 1 year</option>
+	        </select>
+	        <div class="checkbox">
+	          <label>
+	            <input type="checkbox" value="remember-me"> Remember me
+	          </label>
+	        </div> 
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+	      </form>
+ </div>
+</body>
+</html>
